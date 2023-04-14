@@ -1,0 +1,4 @@
+{
+	"notification_system": "my_system",
+	"dependencies": "dependency1, requirement2"
+}
