@@ -7,12 +7,12 @@ name = "argus_notification_{{ cookiecutter.notification_system }}"
 authors = [{name = "Hanne Moa", email = "hanne.moa@sikt.no"}]
 maintainers = [{name = "Hanne Moa", email = "hanne.moa@sikt.no"}]
 dependencies = [
-    "argus-server>=1.9",
+    "argus-server>=1.14",
     {%- for dependency in cookiecutter.dependencies.split(',') %}
     "{{ dependency.strip() }}",
     {%- endfor %}
 ]
-requires-python = ">=3.7"
+requires-python = ">=3.8"
 classifiers = [
     "Development Status :: 4 - Beta",
     "Framework :: Django",
@@ -21,9 +21,11 @@ classifiers = [
     "Intended Audience :: System Administrators",
     "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
     "Programming Language :: Python :: 3 :: Only",
-    "Programming Language :: Python :: 3.7",
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
     "Topic :: System :: Monitoring",
 ]
 dynamic = ["version", "description"]
